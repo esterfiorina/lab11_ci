@@ -1,4 +1,5 @@
 <?= $this->include('template/admin_header'); ?>
+
 <form method="get" class="form-search">
   <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
   <input type="submit" value="Cari" class="btn btn-primary">
@@ -54,4 +55,5 @@
   </tfoot>
 </table>
 <?= $this->include('template/admin_footer'); ?>
+
 <?= $pager->only(['q'])->links(); ?>
